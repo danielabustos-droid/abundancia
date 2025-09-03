@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMA DE REIKI DE LA ABUNDANCIA</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1277268559898266'); // Reemplaza con tu ID del pixel
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1277268559898266&ev=PageView&noscript=1"
+    /></noscript>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: linear-gradient(135deg, #fffeb 0%, #f5f5f0 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 235, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(155, 173, 164, 0.2);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #9b7d61;
+            font-weight: 300;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #9b7d61 0%, #daa38f 50%, #92ada4 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.08)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fffeb;
+            color: #9b7d61;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border: 2px solid #fffeb;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+            background: transparent;
+            color: #fffeb;
+        }
+
+        /* Program Details */
+        .program-details {
+            padding: 80px 0;
+            background: #fffeb;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .program-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(155, 173, 164, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 4px solid #92ada4;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-card:nth-child(2) {
+            border-top-color: #daa38f;
+        }
+
+        .program-card:nth-child(3) {
+            border-top-color: #e9d7c0;
+        }
+
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .card-icon.sessions { background: #92ada4; }
+        .card-icon.daily { background: #daa38f; }
+        .card-icon.distance { background: #e9d7c0; color: #9b7d61; }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #9b7d61;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f5f0 0%, #e9d7c0 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(155, 125, 97, 0.1);
+            border-left: 4px solid #92ada4;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .testimonial-card:nth-child(2) { border-left-color: #daa38f; }
+        .testimonial-card:nth-child(3) { border-left-color: #9b7d61; }
+        .testimonial-card:nth-child(4) { border-left-color: #92ada4; }
+        .testimonial-card:nth-child(5) { border-left-color: #e9d7c0; }
+        .testimonial-card:nth-child(6) { border-left-color: #daa38f; }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #9b7d61;
+            font-size: 1.1rem;
+        }
+
+        .quote-mark {
+            font-size: 3rem;
+            color: #92ada4;
+            opacity: 0.3;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #92ada4 0%, #9b7d61 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .price-card {
+            background: rgba(255, 255, 235, 0.95);
+            color: #2c2c2c;
+            padding: 60px;
+            border-radius: 30px;
+            max-width: 500px;
+            margin: 40px auto 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .price {
+            font-size: 4rem;
+            color: #9b7d61;
+            font-weight: 300;
+            margin: 20px 0;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .price-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(155, 125, 97, 0.2);
+            font-size: 1.1rem;
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            background: #fffeb;
+            text-align: center;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        .payment-button {
+            display: inline-block;
+            background: #9b7d61;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(155, 125, 97, 0.3);
+        }
+
+        .payment-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(155, 125, 97, 0.4);
+            background: #daa38f;
+        }
+
+        /* Footer */
+        footer {
+            background: #9b7d61;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .program-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .price { font-size: 3rem; }
+            .container { padding: 0 15px; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .program-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .program-card:nth-child(2) { animation-delay: 0.2s; }
+        .program-card:nth-child(3) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PROGRAMA DE REIKI DE LA ABUNDANCIA</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Programa Reiki de la Abundancia</h1>
+                <p class="hero-subtitle">21 días que cambiarán tu vida para siempre</p>
+                <p class="hero-subtitle">✨ Tercera edición con resultados comprobados ✨</p>
+                <a href="#pricing" class="cta-button" onclick="fbq('track', 'ViewContent', {content_name: 'Programa de Reiki de la Abundancia'});">Comenzar mi transformación</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-details">
+        <div class="container">
+            <h2 class="section-title">¿Qué incluye el programa?</h2>
+            <p class="section-subtitle">Un acompañamiento integral de 21 días diseñado para tu sanación y crecimiento personal</p>
+            
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="card-icon sessions">🤲</div>
+                    <h3>2 Sesiones en Vivo</h3>
+                    <p>Sesiones personalizadas donde trabajaremos directamente tu energía y recibirás orientación específica para tu proceso de sanación.</p>
+                </div>
+                
+                <div class="program-card">
+                    <div class="card-icon daily">📅</div>
+                    <h3>21 Días de Trabajos Diarios</h3>
+                    <p>Ejercicios y prácticas energéticas diseñadas especialmente para crear hábitos sanadores y transformar tu vida desde adentro.</p>
+                </div>
+                
+                <div class="program-card">
+                    <div class="card-icon distance">🌟</div>
+                    <h3>Reiki a Distancia</h3>
+                    <p>Envíos de energía sanadora durante todo el programa para potenciar tu proceso de transformación. También enviaré Reiki a tus proyectos y negocios para que fluyan con abundancia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen quienes ya vivieron la transformación</h2>
+            <p class="section-subtitle">Testimonios reales de personas que cambiaron su vida en 21 días</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">¡Encontré trabajo! Durante el programa sentí como la energía se movía, hubo días con dolor de cabeza que me indicaba que algo estaba cambiando. Al finalizar los 21 días, llegó la oportunidad laboral que tanto esperaba.</p>
+                    <p class="testimonial-author">- Francisco M.</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Los primeros días tuve dolores de cabeza porque la energía se movía intensamente, pero mi emprendimiento comenzó a fluir de manera increíble. Las ventas aumentaron y llegaron clientes nuevos sin esfuerzo.</p>
+                    <p class="testimonial-author">- Francisca L.</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Me estoy abriendo a nuevas posibilidades que antes ni imaginaba. La primera semana me sentía muy decaída, pero al finalizar comenzé a ver cambios profundos en mi forma de ver la vida.</p>
+                    <p class="testimonial-author">- Camila R.</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Recibí el apoyo que tanto necesitaba en un momento muy difícil. El proceso me ayudó a tomar consciencia de patrones que me limitaban. Hoy me siento renovada y con mucha más claridad.</p>
+                    <p class="testimonial-author">- Carla P.</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Empecé sin mucha fe, muy desmotivada. Los primeros días fueron intensos, sentí la energía moviéndose con algunos malestares, pero eso me confirmó que algo estaba sanando. Terminé el programa con una motivación que no sentía hace años.</p>
+                    <p class="testimonial-author">- Andrea S.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">La transformación fue gradual pero profunda. La primera parte del programa me costó mucho, me sentía muy decaída, pero al ir avanzando comenzé a experimentar una paz interior que no conocía. Mi vida cambió completamente.</p>
+                    <p class="testimonial-author">- Valentina K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Una inversión que cambiará tu vida</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Programa completo de transformación energética</p>
+            
+            <div class="price-card">
+                <h3>Programa Completo 21 Días</h3>
+                <div class="price">
+                    <span style="font-size: 2rem; text-decoration: line-through; color: #999; opacity: 0.7;">$60.000</span><br>
+                    $40.000
+                </div>
+                <p style="color: #e74c3c; font-weight: 600; margin-bottom: 20px; font-size: 1.1rem;">¡Precio especial por tiempo limitado!</p>
+                
+                <ul class="price-features">
+                    <li>✓ 2 Sesiones personalizadas en vivo</li>
+                    <li>✓ 21 días de trabajos energéticos diarios</li>
+                    <li>✓ Envíos de Reiki a ti Y a tus negocios</li>
+                    <li>✓ Acompañamiento personalizado</li>
+                    <li>✓ Acceso a grupo privado de apoyo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">¿Lista para transformar tu energía?</h2>
+            <p class="section-subtitle">Contáctame por WhatsApp para resolver tus dudas o procede directamente al pago</p>
+            
+            <a href="https://wa.me/56991281783?text=Hola! Me interesa el Programa Reiki de 21 días. Me podrías dar más información?" class="whatsapp-button" onclick="fbq('track', 'Contact');">
+                💬 WhatsApp
+            </a>
+            
+            <a href="https://www.flow.cl/btn.php?token=dd2f13dea581fea481e7b60dbfef0decc75f4a5a" class="payment-button" onclick="fbq('track', 'Purchase', {value: 40000, currency: 'CLP'});">
+                💳 Pagar Ahora
+            </a>
+            
+            <div style="margin-top: 40px;">
+                <p><strong>📱 WhatsApp:</strong> +56 9 9128 1783</p>
+                <p style="margin-top: 20px; color: #666;">
+                    <em>Programa validado con resultados reales.<br>
+                    Únete a las personas que ya han transformado su energía.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PROGRAMA DE REIKI DE LA ABUNDANCIA</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 235, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 235, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
